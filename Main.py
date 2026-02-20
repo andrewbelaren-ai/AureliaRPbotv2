@@ -5,7 +5,7 @@ import random
 import threading
 import math
 
-TOKEN = '8595324337:AAHQ-tDAN2r3hkshJTH7UYuWMPEsmbfe7qI'
+TOKEN = '8539716689:AAEZh2dVddEMMsU4cLNs0JPgqosyeMfXX_8'
 ADMIN_IDS = [6115517123, 2046462689, 7787565361]
 ALLOWED_GROUP_IDS = [-1003880025896, -1003790960557]
 
@@ -211,7 +211,6 @@ def init_db():
         ('military_sc','🎖️ Военная наука',        5, 250, '+15% к боевой мощи за каждый уровень',           '+15% military power per level'),
         ('industry',   '🏗️ Индустриализация',     5, 180, '+20% к генерации ОЭ за каждый уровень',          '+20% EP per level'),
         ('energy',     '⚡ Энергетика',           5, 220, '-10% к расходу нефти танками за уровень',         '-10% oil consumption per level'),
-        ('espionage',  '🕵️ Разведка',             3, 300, 'Открывает разведывательные возможности (скоро)', 'spy features'),
     ]
     cursor.executemany(
         'INSERT OR IGNORE INTO tech_types (name, display_name, max_level, ep_cost_per_level, description, effect) VALUES (?,?,?,?,?,?)',
